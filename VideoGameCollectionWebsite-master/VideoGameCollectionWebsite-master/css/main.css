@@ -1,0 +1,330 @@
+/* Miscellaneous Changes
+----------------------*/
+
+body {
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+i {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+/* Header & Navigation
+----------------------*/
+
+.main-header {
+  background-color: rgba(50, 125, 225, .15);
+}
+
+.main-logo {
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.main-nav ul  {
+  font-family: "Orbitron";
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.main-nav a {
+  display: block;
+  margin: 10px 0;
+  padding: 15px;
+  color: white;
+}
+
+/* Index.html Content
+----------------------*/
+
+.primary-content {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.primary-content h1 {
+  font-family: "Orbitron";
+  color: white;
+  font-size: 30px;
+  padding: 15px 5px;
+}
+
+img {
+  width: 100%;
+}
+
+p.release-date {
+  font-size: 20px;
+}
+
+a.preorder-button {
+  color: black;
+  display: block;
+  margin: 2% 35% 0;
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 10px;
+  transition: transform .3s ease-in; 
+}
+
+a.preorder-button:hover {
+  transform: scale(1.2);
+}
+
+a.preorder-button:visited {
+  color: black;
+}
+
+.content-description {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.secondary-content ul {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 5px 10px;
+}
+
+
+.secondary-content li {
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.secondary-content i {
+  float: left;
+  padding-right: 5px;
+}
+
+  
+.flexslider div {
+  text-align: center;
+  margin: 0 2%;
+}
+
+.flex-control-nav li {
+  margin: 10px 6px;
+}
+
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(255, 255, 255, .3);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.flex-control-paging li a.flex-active {
+  background: #fff;
+  background: rgba(255, 255, 255, 1);
+  cursor: default;
+}
+
+.flex-direction-nav {
+  display: none;
+}
+
+/* Gallery.html Content
+----------------------*/
+
+.gallery-content h2 {
+  color: white;
+  text-align: center;
+}
+
+#image-gallery {
+  list-style:none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#image-gallery li {
+  width: 100%;
+  margin: 5% 0;
+}
+
+/*-- Added using Javascript and JQuery --*/
+#lightbox {
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, .5); 
+  text-align: center;
+}
+
+#content {
+  margin-top: 50%;
+}
+
+/* Footer
+----------------------*/
+
+.main-footer {
+  font-size: small;
+  color: rgba(255, 255, 255, .7);
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px 0;
+  
+}
+
+/* ClearFix
+----------------------*/
+
+.main-header {
+  content: " ";
+  display: table;
+  width: 100%;
+}
+
+/* index.html Media Queries
+----------------------*/
+
+@media screen and (min-width: 768px), screen and (orientation: landscape) {
+  
+  /* index.html Media Queries
+  ----------------------*/
+  
+  .main-nav li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  img {
+    width: 75%;
+  }
+  
+  a.preorder-button {
+    margin: 2% 40% 0;
+  }
+  
+  .content-description {
+    margin: 0 10%;
+  }
+  
+  .secondary-content ul {
+    margin: 0 10%;
+  }
+  
+  .secondary-content li {
+    margin: 30px;
+  }
+  
+  .flexslider div {
+    margin: 0 5%;
+  }
+  
+  /* gallery.html Media Queries
+  ----------------------*/  
+  
+  #image-gallery {
+    text-align: center;
+  }
+
+  #image-gallery li {
+    display: inline-block;
+    margin: 2% 2%;
+    padding: 0;
+    width: 40%;
+    text-align: center;
+  }
+
+  #image-gallery li img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #content {
+    margin-top: 7%;
+  }
+  
+  .flexslider {
+    width: 50%;
+    margin: 3% auto 6%;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  
+  /* index.html Media Queries
+  ----------------------*/
+  
+  .main-logo, .main-nav {
+    display: inline-block;
+  }
+  
+  .main-logo {
+    margin: 1%;
+    margin-left: 3%;
+    
+  }
+  .main-nav {
+    float: right;
+    margin-top: 2%;
+  }
+  
+  img {
+    width: 55%;
+  }
+  
+  .content-description {
+    margin: 0 20%;
+  }
+  
+  .secondary-content ul {
+    text-align: center;
+    margin: 0; 
+  }
+  
+  .secondary-content li {
+    margin: 1% 1%;
+    padding: 1%;
+    display: inline-block;
+    width: 30%;
+  }
+  
+  /* gallery.html Media Queries
+  ----------------------*/  
+  
+  #image-gallery li {
+    margin: 3% 1%;
+    width: 30%;
+  }
+  
+  #content {
+  margin-top: 5%;
+  }
+  
+  .flexslider {
+    width: 40%;
+  }
+}
